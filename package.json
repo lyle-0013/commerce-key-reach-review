@@ -1,0 +1,19 @@
+{
+  "name": "commerce-key-reach-review",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --experimental-strip-types src/access_review_service.ts",
+    "review": "node --experimental-strip-types src/run_review.ts",
+    "test": "node --experimental-strip-types --test test/reach_policy.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^4.1.11"
+  },
+  "devDependencies": {
+    "@types/node": "^24.7.2",
+    "typescript": "^5.9.3"
+  }
+}
